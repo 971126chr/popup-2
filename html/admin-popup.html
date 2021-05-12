@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/admin-style.css">
+    <title>추천 상품 등록</title>
+</head>
+<body>
+    <div class="wrap">
+        <div class="main">
+            <h1 class="red-bg">
+                &Omicron; 추천 상품 등록
+            </h1>
+            <div class="section">
+                <form method="GET">
+                    <div class="add-table">
+                        <table class="add-product">
+                            <h2 class="add-product-table-h2">
+                                추천 상품 등록 표
+                            </h2>
+                            <colgroup>
+                                <col style="width: 20%;">
+                                <col style="width: 80%;">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">게시여부</th>
+                                    <td>
+                                        <label>
+                                            <input type="radio" name="post" value="게시">
+                                            게시
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="none-post" value="비게시" checked>
+                                            비게시
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">추천상품</th>
+                                    <td>
+                                        <label class="product-number">
+                                            <input type="text" autofocus placeholder="상품번호">
+                                        </label>
+                                        <label class="product-name">
+                                            <input type="text" autofocus placeholder="상품명">
+                                        </label>
+                                        <button type="submit" class="find-product-btn">
+                                            상품찾기
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="add-cancel-btn">
+                        <button type="submit" class="add-btn">
+                            <span class="add-btn-center">
+                                <span class="add-btn-left">
+                                    <span class="add-btn-right">
+                                        등록
+                                    </span>
+                                </span>
+                            </span>
+                        </button>
+                        <button class="cancel-btn">
+                            <span class="cancel-btn-center">
+                                <span class="cancel-btn-right">
+                                    <span class="cancel-btn-left">
+                                        취소
+                                    </span>
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+                </form>
+                <div class="main-content">
+                    <h2 class="find-product-h2">상품 찾기</h2>
+                    <form method="GET">
+                        <div class="product-search">
+                            <div>
+                                <select name="coffee" class="left-select">
+                                    <option value="coffee" selected="selected">외식/커피</option>
+                                    <option value="juice">쥬스</option>
+                                </select>
+                                <select name="donut" class="right-select">
+                                    <option value="donut" selected="selected">도너츠/번</option>
+                                    <option value="cake">케이크</option>
+                                </select>
+                            </div>
+                            <div class="search-box">
+                                <select name="sale-product-name" class="left-select">
+                                    <option value="sale-product-name" selected="selected">판매상품명</option>
+                                    <option value="juice">쥬스</option>
+                                </select>
+                                <input type="text" class="search-text">
+                                <button type="submit" class="find-product-btn">
+                                    검색
+                                </button>
+                            </div>
+                            <div>
+                                <table class="after-find-table">
+                                    <h3 class="after-find-table-h3">
+                                        상품 검색 내용
+                                    </h3>
+                                    <colgroup>
+                                        <col style="width: 10%;">
+                                        <col style="width: 15%;">
+                                        <col style="width: 15%;">
+                                        <col style="width: 25%;">
+                                        <col style="width: 20%;">
+                                        <col style="width: 15%;">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">번호</th>
+                                            <th scope="col">대분류</th>
+                                            <th scope="col">소분류</th>
+                                            <th scope="col">
+                                                판매상품명
+                                            </th>
+                                            <th scope="col">
+                                                판매상품ID
+                                            </th>
+                                            <th scope="col">
+                                                선택
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>외식/커피</td>
+                                            <td>도너츠/번</td>
+                                            <td>던킨 치즈 베이글</td>
+                                            <td>admin1</td>
+                                            <td>
+                                                <button class="choice">
+                                                    선택
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>외식/커피</td>
+                                            <td>도너츠/번</td>
+                                            <td>오리지널 글레이즈</td>
+                                            <td>kaown</td>
+                                            <td>
+                                                <button class="choice">
+                                                    선택
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>외식/커피</td>
+                                            <td>도너츠/번</td>
+                                            <td>던킨 5천원 교환권</td>
+                                            <td>wowrk1</td>
+                                            <td>
+                                                <button class="choice">
+                                                    선택
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>외식/커피</td>
+                                            <td>도너츠/번</td>
+                                            <td>던킨 치즈 베이글</td>
+                                            <td>admin1</td>
+                                            <td>
+                                                <button class="choice">
+                                                    선택
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>외식/커피</td>
+                                            <td>도너츠/번</td>
+                                            <td>오리지널 글레이즈</td>
+                                            <td>kaown</td>
+                                            <td>
+                                                <button class="choice">
+                                                    선택
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="page-here">
+                                <a href="#none" class="page-change-click">
+                                    &lt;&lt;
+                                </a>
+                                <a href="#none" class="page-change-click active">
+                                    1
+                                </a>
+                                <a href="#none" class="page-change-click">
+                                    2
+                                </a>
+                                <a href="#none" class="page-change-click">
+                                    3
+                                </a>
+                                <a href="#none" class="page-change-click">
+                                    4
+                                </a>
+                                <a href="#none" class="page-change-click">
+                                    5
+                                </a>
+                                <a href="#none" class="page-change-click">
+                                    6
+                                </a>
+                                <a href="#none" class="page-change-click">
+                                    7
+                                </a>
+                                <a href="#none" class="page-change-click">
+                                    8
+                                </a>
+                                <a href="#none" class="page-change-click">
+                                    9
+                                </a>
+                                <a href="#none" class="page-change-click">
+                                    10
+                                </a>
+                                <a href="#none" class="page-change-click">
+                                    &gt;&gt;
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

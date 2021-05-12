@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+}
+.wrap {
+    background: #000000;
+    padding: 150px 115px;
+    margin: 100px;
+    width: 800px;
+    height: 800px;
+}
+.main {
+    background: #ffffff;
+    width: 590px;
+    height: 545px;
+}
+h1.red-bg {
+    background: #8e001a;
+    font-size: 13px;
+    line-height: 31px;
+    color: #ffffff;
+    padding-left: 15px;
+}
+.section {
+    padding: 30px 15px 35px;
+}
+.add-table {
+    padding-right: 2px;
+}
+h2.add-product-table-h2 {
+    font-size: 0px;
+}
+table.add-product {
+    border: 1px solid #dddddd;
+    width: 100%;
+}
+table.add-product tr th {
+    background: #ffeded;
+    font-size: 12px;
+    color: #650013;
+    line-height: 30px;
+    border-right: 1px solid #dddddd;
+}
+table.add-product tr:not(:last-child) th, tr:not(:last-child) td {
+    border-bottom: 1px solid #e9e8e7;
+}
+table.add-product tr:first-child td {
+    padding-left: 9px;
+    font-size: 12px;
+    color: #666666;
+}
+table.add-product tr:first-child td label input {
+    vertical-align: middle;
+}
+table.add-product tr:first-child td label:last-child {
+    margin-left: 25px;
+}
+table.add-product tr:last-child td {
+    padding-left: 9px;
+}
+table.add-product tr:last-child td label {
+    display: inline-block;
+}
+label.product-number input , label.product-name input {
+    width: 90px;
+    height: 22px;
+    border: 1px solid #dddddd;
+    color: #bbbbbb;
+    font-size: 12px;
+    padding-left: 10px;
+}
+label.product-name input {
+    width: 114px;
+}
+button.find-product-btn {
+    border: 1px solid #c3c3c3;
+    border-radius: 3px;
+    box-shadow: 1px 1px #ececec;
+    background: linear-gradient( to bottom, #ffffff, #f7f7f7);
+    font-size: 11px;
+    color: #555555;
+    letter-spacing: -1.5px;
+    line-height: 20px;
+    padding: 0 8.5px;
+}
+.add-cancel-btn {
+    margin-top: 10px;
+    text-align: right;
+    padding-right: 1px;
+}
+button.add-btn, button.cancel-btn {
+    border: none;
+    background: none;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 21px;
+    font-size: 11px;
+}
+span.add-btn-center {
+    display: inline-block;
+    background: url("../img/admin/add-btn-center.png") repeat-x; 
+}
+span.add-btn-left {
+    display: inline-block;
+    background: url("../img/admin/add-btn-left.png") no-repeat;
+    padding-left: 17px;
+}
+span.add-btn-right {
+    display: inline-block;
+    background: url("../img/admin/add-btn-right.png") no-repeat right;
+    padding-right: 17px;
+}
+button.cancel-btn {
+    margin-left: 4px;
+}
+span.cancel-btn-center {
+    display: inline-block;
+    background: url("../img/admin/cancel-btn-center.png") repeat-x;
+}
+span.cancel-btn-left {
+    display: inline-block;
+    background: url("../img/admin/cancel-btn-left.png") no-repeat;
+    padding-left: 17px;
+}
+span.cancel-btn-right {
+    display: inline-block;
+    background: url("../img/admin/cancel-btn-right.png") no-repeat right;
+    padding-right: 17px;
+}
+.main-content {
+    margin-top: 39px;
+    border: 1px solid #dddddd;
+}
+h2.find-product-h2 {
+    font-size: 12px;
+    color: #ffffff;
+    line-height: 28px;
+    background: #444444;
+    padding-left: 178px;
+}
+.product-search {
+    padding: 18px 21px 19px 18px;
+}
+select.left-select, select.right-select {
+    border: 1px solid #dddddd;
+    color: #666666;
+    font-size: 12px;
+    padding: 2px 28px 2px 5px;
+}
+select.right-select {
+    padding: 2px 140px 2px 3px;
+    margin-left: -1px;
+}
+.search-box {
+    margin-top: 9px;
+}
+.search-box select.left-select {
+    padding: 2px 20px 2px 5px;
+}
+input.search-text {
+    border: 1px solid #dddddd;
+    margin-left: -1px;
+    padding: 1px 20px 1px 2px;
+}
+.search-box button.find-product-btn {
+    padding: 0px 18px;
+}
+table.after-find-table {
+    margin-top: 13px;
+    width: 100%;
+}
+h3.after-find-table-h3 {
+    font-size: 0px;
+}
+table.after-find-table th {
+    font-size: 11px;
+    color: #650013;
+    background: #f0d6da;
+    line-height: 25px;
+}
+table.after-find-table th:not(:last-child) {
+    border-right: 1px solid #ffffff;
+}
+table.after-find-table td {
+    font-size: 12px;
+    color: #666666;
+    line-height: 25px;
+    text-align: center;
+}
+table.after-find-table tr:not(:last-child) td {
+    border-bottom: 1px solid #eeeeee;
+}
+table.after-find-table tr:last-child td {
+    border-bottom: 1px solid #f0d6da;
+}
+button.choice {
+    font-size: 11px;
+    color: #ffffff;
+    background: #6d001b;
+    border: none;
+    padding: 1.5px 12px;
+}
+.page-here {
+    margin-top: 20px;
+    text-align: center;
+}
+.page-here a.page-change-click {
+    font-size: 11px;
+    letter-spacing: -1.5px;
+    color: #5e5d5d;
+}
+.page-here a.page-change-click:not(:last-child) {
+    padding-right: 15px;
+}
+.page-here a.page-change-click:hover, .page-here a.active {
+    font-weight: bold;
+    color: #9f001d;
+}

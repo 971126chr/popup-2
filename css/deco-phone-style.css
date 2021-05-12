@@ -12,9 +12,10 @@
 .main {
     background: #000000;
     padding: 21px 30px 20px;
+    position: relative;
 }
 .header {
-    padding-right: 195px;
+    padding-right: 136px;
     background: url("../img/deco-phone/header-bg.png") no-repeat right;
     height: 71px;
     display: inline-block;
@@ -107,11 +108,88 @@ h2.section-h2 {
     background: #111111;
     min-height: 112px;
 }
-span.step-01 {
+.section-second-box {
+    margin-top: 10px;
+    background: #111111;
+    padding: 14px 0 11px 22px;
+    min-height: 92px;
+}
+.section .section-second-box:nth-child(5) {
+    padding: 17px 0 11px 28px;
+}
+.section .section-second-box:nth-child(6) {
+    padding: 20px 0 20px 30px;
+    min-height: 124px;
+}
+span.step-01, span.step-02, span.step-03, span.step-04 {
     font-size: 9px;
     color: #ffffff;
     background: url("../img/deco-phone/music-icon.png") no-repeat;
-    padding-top: 53px;
+    padding-top: 60px;
     width: 37px;
     display: inline-block;
+}
+span.step-02 {
+    background: url("../img/deco-phone/won-icon.png") no-repeat;
+    padding-top: 58px;
+    width: 51px;
+    text-align: center;
+}
+span.step-03 {
+    background: url("../img/deco-phone/chatting-icon.png") no-repeat;
+    padding-top: 55px;
+    width: 52px;
+    text-align: center;
+}
+span.step-04 {
+    background: url("../img/deco-phone/download-icon.png") no-repeat;
+    padding-top: 60px;
+    margin-top: 10px;
+    width: 46px;
+    text-align: center;
+}
+.list-in-section {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 37px;
+}
+h3.list-h3 {
+    font-size: 12px;
+    color: #ec1118;
+    font-weight: lighter;
+}
+ol.list {
+    color: #ffffff;
+    list-style: decimal inside;
+    font-size: 11px;
+    text-indent: 1px;
+    letter-spacing: -1.5px;
+    margin-top: 15px;
+}
+div.section-second-box ol.list {
+    line-height: 13px;
+}
+ol.list li:not(:first-child) {
+    margin-top: 5px;
+}
+ol.list li span.red-button {
+    background: url("../img/deco-phone/list-red-button.png") no-repeat left;
+    padding-left: 26px;
+    margin-left: 2px;
+    display: inline-block;
+    height: 13px;
+    vertical-align: text-bottom;
+}
+ol.list li span.after-br {
+    text-indent: 8px;
+    display: block;
+}
+a.popup-close {
+    background: url("../img/deco-phone/phone-popup-close.png") no-repeat;
+    width: 32px;
+    height: 32px;
+    display: block;
+    position: absolute;
+    top: 35px;
+    right: 24px;
 }

@@ -3,16 +3,22 @@
 }
 .wrap {
     margin: 54px 45px 76px 35px;
+    position: relative;
 }
 
 /*top-left*/
 
-.main-top-left {
-    min-width: 767px;
-    min-height: 625px;
+.main-top-left, .main-top-right, .main-bottom-right, .main-bottom-left, .main-center {
+    width: 767px;
+    height: 625px;
     background: #c6c6c6;
     padding: 3px;
+    display: inline-block;
+    position: absolute;
 }
+.main-top-left {
+    top: 0;
+    left: 0;}
 h2.popup-h2 {
     background: #ffffff;
     padding-left: 15px;
@@ -26,16 +32,308 @@ h2.popup-h2 span.black-text {
     padding-left: 10px;
     color: #000000;
 }
-.top-left-content {
+.top-left-content, .top-right-content, .bottom-left-content, .center-content {
     background: #ffffff;
     margin-top: 1px;
     padding: 20px 19px 20px 20px;
 }
-table.big-table {
+table.my-gifticon-table {
     border-top: 1px solid #dcdcdc;
     border-bottom: 1px solid #dcdcdc;
     width: 100%;
 }
-h3.big-table-caption {
+h3.table-caption {
     font-size: 0px;
+}
+table.my-gifticon-table tr th {
+    line-height: 32px;
+    background: #f5f5f5;
+    font-size: 12px;
+    letter-spacing: -1px;
+    color: #7e7e7e;
+    font-weight: lighter;
+    text-align: left;
+    padding-left: 35px;
+}
+table.my-gifticon-table tr th:first-child {
+    padding-left: 21px;
+}
+table.my-gifticon-table tr:not(:last-child) {
+    border-bottom: 1px solid #f0f0f0;
+}
+table.my-gifticon-table tbody tr td {
+    font-size: 12px;
+    color: #646464;
+    padding-left: 16px;
+    line-height: 32px;
+    letter-spacing: -1px;
+}
+table.my-gifticon-table tr td.bold-text {
+    font-weight: bold;
+}
+table.my-gifticon-table tr td.orange-text {
+    color: #ff5f28;
+}
+.top-left-bottom-content {
+    margin-top: 30px;
+    padding-left: 1px;
+}
+ul.top-left-list {
+    font-size: 14.7px;
+    letter-spacing: -1px;
+    color: #6c6c6c;
+    font-weight: bold;
+    background: url("../img/my-gifticon/list-marker.png") no-repeat left center;
+    padding-left: 7px;
+}
+.top-left-small-table {
+    margin-top: 10px;
+}
+.button-content {
+    text-align: center;
+    background: #ffffff;
+    margin-top: 1px;
+    line-height: 46px;
+}
+button.top-left-button, button.cancel-button {
+    border: none;
+    background: none;
+    color: #ffffff;
+    font-size: 12.5px;
+    line-height: 25px;
+    letter-spacing: -2px;
+}
+span.orange-button-center {
+    display: inline-block;
+    background: url("../img/my-gifticon/orange-button-center.png") repeat-x;
+}
+span.orange-button-left {
+    display: inline-block;
+    background: url("../img/my-gifticon/orange-button-left.png") no-repeat;
+    padding-left: 18px;
+}
+span.orange-button-right {
+    display: inline-block;
+    background: url("../img/my-gifticon/orange-button-right.png") no-repeat right;
+    padding-right: 18px;
+}
+
+/*main-top-right*/
+
+.main-top-right {
+    width: 766px;
+    height: 239px;
+    left: 891px;
+}
+.top-right-content {
+    padding: 20px;
+}
+table.my-gifticon-table thead tr th {
+    text-align: center;
+    padding-left: 0;
+}
+
+/*main-bottom-right*/
+
+.main-bottom-right {
+    width: 700px;
+    height: 348px;
+    top: 318px;
+    left: 891px;
+}
+.top-right-list {
+    padding-left: 2px;
+    position: relative;
+}
+.top-right-list ul {
+    font-size: 12px;
+    color: #686868;
+    line-height: 19px;
+}
+ul li p.list-marker {
+    background: url("../img/my-gifticon/list-marker.png") no-repeat left center;
+    padding-left: 8px;
+}
+.top-right-list ul li span.after-br {
+    display: block;
+    text-indent: 8px;
+}
+button.excel-download {
+    border: none;
+    background: none;
+    margin-top: 4px;
+    position: absolute;
+    right: 0;
+    line-height: 19px;
+    font-size: 11px;
+    color: #878787;
+    letter-spacing: -1px;
+}
+span.excel-center {
+    display: inline-block;
+    background: url("../img/my-gifticon/excel-download.png") repeat-x;
+}
+span.excel-left {
+    display: inline-block;
+    background: url("../img/my-gifticon/excel-download-left.png") no-repeat;
+    padding-left: 26px;
+}
+span.excel-right {
+    display: inline-block;
+    background: url("../img/my-gifticon/excel-download-right.png") no-repeat right;
+    padding-right: 11px;
+}
+.bottom-right-content {
+    margin-top: 32px;
+}
+select.others {
+    border: 1px solid #d8d8d8;
+    color: #646464;
+    font-size: 12px;
+    line-height: 18px;
+    padding: 0 50px 0 3px;
+}
+.bottom-right-content table.my-gifticon-table tr:last-child th {
+    text-align: center;
+    padding-left: 0;
+}
+input.find-file-text {
+    border: 1px solid #d8d8d8;
+    color: #646464;
+    font-size: 12px;
+    line-height: 19px;
+    padding: 0 75px 0 8px;
+}
+.filebox input[type="file"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+.filebox {
+    border-top: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #aaaaaa;
+    border-bottom: 1px solid #aaaaaa;
+    display: inline-block;
+    line-height: 20px;
+    margin-left: 1px;
+}
+label {
+    cursor: pointer;
+}
+.filebox label {
+    padding: 3px 10.5px;
+}
+table.my-gifticon-table td p.td-p {
+    line-height: 15px;
+}
+table.my-gifticon-table td p.td-p span.line {
+    border-left: 2px solid #646464;
+    padding: 0 1px;
+}
+.bottom-right-content table.my-gifticon-table tr:last-child th {
+    vertical-align: middle;
+}
+.bottom-right-content table.my-gifticon-table tr:last-child td {
+    line-height: 29px;
+    padding-bottom: 6px;
+}
+span.orange-arrow-right {
+    display: inline-block;
+    background: url("../img/my-gifticon/orange-arrow-right.png") no-repeat right;
+    padding-right: 21px;
+}
+button.cancel-button {
+    color: #727272;
+}
+span.cancle-button-center {
+    display: inline-block;
+    background: url("../img/my-gifticon/cancel-button.png") repeat-x;
+}
+span.cancle-button-left {
+    display: inline-block;
+    background: url("../img/my-gifticon/cancel-button-left.png") no-repeat;
+    padding-left: 17px;
+}
+span.cancle-button-right {
+    display: inline-block;
+    background: url("../img/my-gifticon/cancel-button-right.png") no-repeat right;
+    padding-right: 19px;
+}
+.bottom-right-content table.my-gifticon-table th label.take-file {
+    padding: 25px 9.5px;
+}
+
+/*main-bottom-left*/
+
+.main-bottom-left {
+    width: 419px;
+    height: 393px;
+    top: 704px;
+}
+.bottom-left-content {
+    padding: 20px 25px 20px 20px;
+}
+.bottom-left-content table.my-gifticon-table tbody tr td {
+    padding-left: 10px;
+}
+.bottom-left-content table.my-gifticon-table input.personal-write {
+    border: 1px solid #d8d8d8;
+    padding: 2.5px 6px; 
+}
+.bottom-left-content table.my-gifticon-table label.bottom-left-text-click {
+    padding: 8.5px 68px 8.5px 0;
+}
+.bottom-left-content table.my-gifticon-table label.phone-number-text {
+    padding: 8.5px 32px 8.5px 0;
+}
+.bottom-left-content table.my-gifticon-table label.email-text {
+    padding: 8.5px 57px 8.5px 0;
+}
+td select.date, td select.other-group {
+    border: 1px solid #e5e5e5;
+    color: #646464;
+    padding: 1px 6px 1px 13px;
+}
+td select.other-group {
+    padding: 1px 61px 1px 6px;
+}
+.bottom-left-content table.my-gifticon-table tr:last-child td:last-child {
+    padding: 5px 6px 9px 10px;
+}
+th label.memo-click{
+    padding: 37px 68px 37px 0;
+}
+td input.memo {
+    border: 1px solid #d8d8d8;
+    width: 100%;
+    height: 75px;
+}
+
+/*main-center*/
+
+.main-center {
+    width: 400px;
+    height: 181px;
+    top: 704px;
+    left: 449px;
+}
+.center-content {
+    padding: 20px 62px 20px 20px;
+}
+.center-content ul {
+    font-size: 12px;
+    letter-spacing: -1px;
+    color: #686868;
+}
+.center-content input.group-name-box {
+    margin-top: 10px;
+    height: 20px;
+    width: 100%;
+    border: 1px solid #d8d8d8;
 }

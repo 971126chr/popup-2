@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+.wrap {
+    margin: 54px 45px 76px 35px;
+}
+
+/*top-left*/
+
+.main-top-left {
+    min-width: 767px;
+    min-height: 625px;
+    background: #c6c6c6;
+    padding: 3px;
+}
+h2.popup-h2 {
+    background: #ffffff;
+    padding-left: 15px;
+    font-size: 16.5px;
+    color: #959595;
+    letter-spacing: -2px;
+    line-height: 46px;
+}
+h2.popup-h2 span.black-text {
+    background: url("../img/my-gifticon/h2-deco.png") no-repeat left center;
+    padding-left: 10px;
+    color: #000000;
+}
+.top-left-content {
+    background: #ffffff;
+    margin-top: 1px;
+    padding: 20px 19px 20px 20px;
+}
+table.big-table {
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    width: 100%;
+}
+h3.big-table-caption {
+    font-size: 0px;
+}

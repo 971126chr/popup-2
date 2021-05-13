@@ -48,19 +48,22 @@ table.add-product tr:first-child td {
     font-size: 12px;
     color: #666666;
 }
-table.add-product tr:first-child td label input {
+table.add-product tr:first-child td input {
     vertical-align: middle;
 }
-table.add-product tr:first-child td label:last-child {
+table.add-product tr th label {
+    padding: 7px 31px;
+}
+table.add-product tr:first-child td:last-child input:last-child {
     margin-left: 25px;
 }
 table.add-product tr:last-child td {
     padding-left: 9px;
 }
-table.add-product tr:last-child td label {
+table.add-product tr:last-child td {
     display: inline-block;
 }
-label.product-number input , label.product-name input {
+input.product-number , input.product-name {
     width: 90px;
     height: 22px;
     border: 1px solid #dddddd;
@@ -68,7 +71,7 @@ label.product-number input , label.product-name input {
     font-size: 12px;
     padding-left: 10px;
 }
-label.product-name input {
+input.product-name {
     width: 114px;
 }
 button.find-product-btn {
@@ -185,6 +188,7 @@ table.after-find-table td {
     color: #666666;
     line-height: 25px;
     text-align: center;
+    letter-spacing: -1px;
 }
 table.after-find-table tr:not(:last-child) td {
     border-bottom: 1px solid #eeeeee;
@@ -192,12 +196,28 @@ table.after-find-table tr:not(:last-child) td {
 table.after-find-table tr:last-child td {
     border-bottom: 1px solid #f0d6da;
 }
-button.choice {
+input.choice {
     font-size: 11px;
     color: #ffffff;
     background: #6d001b;
     border: none;
     padding: 1.5px 12px;
+}
+table.after-find-table tbody tr td:first-child label {
+    padding: 4.5px 22px;
+}
+table.after-find-table tbody tr td:nth-child(2) label,
+table.after-find-table tbody tr td:nth-child(3) label {
+    padding: 4.5px 12px;
+}
+table.after-find-table tbody tr td:nth-child(4) label {
+    padding: 4.5px 18px;
+}
+table.after-find-table tbody tr td:nth-child(5) label {
+    padding: 4.5px 31px;
+}
+table.after-find-table tbody tr td label {
+    cursor: pointer;
 }
 .page-here {
     margin-top: 20px;

@@ -8,7 +8,7 @@
 
 /*top-left*/
 
-.main-top-left, .main-top-right, .main-bottom-right, .main-bottom-left, .main-center {
+.main-top-left, .main-top-right, .main-bottom-right, .main-bottom-left, .main-center, .first-layer, .second-left-layer {
     width: 767px;
     height: 625px;
     background: #c6c6c6;
@@ -18,7 +18,8 @@
 }
 .main-top-left {
     top: 0;
-    left: 0;}
+    left: 0;
+}
 h2.popup-h2 {
     background: #ffffff;
     padding-left: 15px;
@@ -32,7 +33,7 @@ h2.popup-h2 span.black-text {
     padding-left: 10px;
     color: #000000;
 }
-.top-left-content, .top-right-content, .bottom-left-content, .center-content {
+.top-left-content, .top-right-content, .bottom-left-content, .center-content, .first-layer-content, .second-left-content {
     background: #ffffff;
     margin-top: 1px;
     padding: 20px 19px 20px 20px;
@@ -336,4 +337,100 @@ td input.memo {
     height: 20px;
     width: 100%;
     border: 1px solid #d8d8d8;
+}
+
+/*html 2 first-layer*/
+
+.first-layer {
+    width: 700px;
+    height: 550px;
+    top: 0;
+    left: 0;
+}
+.first-layer-content {
+    padding: 20px 24px 20px 20px;
+}
+ol.bold-main-list {
+    list-style: decimal inside;
+    font-size: 12px;
+    font-weight: bold;
+    color: #464646;
+    letter-spacing: -1px;
+    line-height: 22px;
+}
+ol.bold-main-list li ul.square-marker {
+    list-style: url("../img/my-gifticon/list-marker.png") inside;
+    font-weight: lighter;
+    color: #646464;
+    line-height: 20px;
+    margin-left: 4px;
+}
+ol.bold-main-list li ul.square-marker li dl.choice-example {
+    margin-left: 6px;
+}
+ol.bold-main-list li ul.square-marker li dl.choice-example dt {
+    background: url("../img/my-gifticon/list-line-marker.png") no-repeat left center;
+    padding-left: 11px;
+}
+ol.bold-main-list li ul.square-marker li dl.choice-example dd {
+    text-indent: 65px;
+    margin-top: -19px;
+}
+ol.bold-main-list li ul.square-marker li dl.choice-example dd:nth-child(5) {
+    margin-top: 0px;
+}
+ol.bold-main-list li ul.square-marker li dl.choice-example dd:last-child {
+    text-indent: 79px;
+} 
+ol.bold-main-list li:not(:first-child) {
+    margin-top: 15px;
+}
+/*second-left-layer*/
+
+.second-left-layer {
+    width: 700px;
+    height: 745px;
+    top: 575px;
+    left: 0;
+}
+.second-left-content {
+    padding: 20px 90px 20px 20px;
+}
+span.indent {
+    display: block;
+    text-indent: 12px;
+}
+dl.square-marker-dl {
+    font-weight: lighter;
+    color: #646464;
+    line-height: 20px;
+    margin-left: 4px;
+}
+dl.square-marker-dl dt {
+    background: url("../img/my-gifticon/list-marker.png") no-repeat left center;
+    padding-left: 7px;
+}
+dl.square-marker-dl span.indent {
+    text-indent: 7px;
+    display: block;
+}
+dl.square-marker-dl dd {
+    text-indent: 50px;
+    margin-top: -19px;
+}
+dl.square-marker-dl dd:last-child {
+    text-indent: 56px;
+}
+ol.bold-main-list li:nth-child(7) span.indent {
+    text-indent: 16px;
+}
+ol.bold-main-list li:last-child dl.square-marker-dl dd {
+    text-indent: 63px;
+}
+
+/*second-right-layer*/
+
+.wrap div.second-left-layer:last-child {
+    left: 720px;
+    top: 575px;
 }

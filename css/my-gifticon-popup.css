@@ -8,7 +8,7 @@
 
 /*top-left*/
 
-.main-top-left, .main-top-right, .main-bottom-right, .main-bottom-left, .main-center, .first-layer, .second-left-layer {
+.main-top-left, .main-top-right, .main-bottom-right, .main-bottom-left, .main-center, .first-layer, .second-left-layer, .third-left-layer, .third-center-layer {
     width: 767px;
     height: 625px;
     background: #c6c6c6;
@@ -33,7 +33,7 @@ h2.popup-h2 span.black-text {
     padding-left: 10px;
     color: #000000;
 }
-.top-left-content, .top-right-content, .bottom-left-content, .center-content, .first-layer-content, .second-left-content {
+.top-left-content, .top-right-content, .bottom-left-content, .center-content, .first-layer-content, .second-left-content, .third-left-content, .third-center-content {
     background: #ffffff;
     margin-top: 1px;
     padding: 20px 19px 20px 20px;
@@ -277,7 +277,7 @@ span.cancle-button-right {
     height: 393px;
     top: 704px;
 }
-.bottom-left-content {
+.bottom-left-content, .third-center-content {
     padding: 20px 25px 20px 20px;
 }
 .bottom-left-content table.my-gifticon-table tbody tr td {
@@ -350,7 +350,7 @@ td input.memo {
 .first-layer-content {
     padding: 20px 24px 20px 20px;
 }
-ol.bold-main-list {
+ol.bold-main-list, ul.square-marker {
     list-style: decimal inside;
     font-size: 12px;
     font-weight: bold;
@@ -358,7 +358,7 @@ ol.bold-main-list {
     letter-spacing: -1px;
     line-height: 22px;
 }
-ol.bold-main-list li ul.square-marker {
+ul.square-marker {
     list-style: url("../img/my-gifticon/list-marker.png") inside;
     font-weight: lighter;
     color: #646464;
@@ -430,7 +430,80 @@ ol.bold-main-list li:last-child dl.square-marker-dl dd {
 
 /*second-right-layer*/
 
-.wrap div.second-left-layer:last-child {
+.wrap div.second-left-layer:nth-child(3) {
     left: 720px;
     top: 575px;
+}
+
+/*third-left-layer*/
+
+.third-left-layer {
+    width: 404px;
+    height: 305px;
+    top: 1350px;
+    left: 0;
+}
+.third-left-content {
+    padding: 20px 7px 24px 20px;
+}
+.third-left-layer .third-left-content ul.square-marker li:last-child {
+    margin-top: 9px;
+}
+.third-left-content-list {
+    padding-bottom: 16px;
+    border-bottom: 1px dotted #d0d0d0;
+}
+.change-number {
+    margin-top: 13px;
+}
+input.gray-text-box, input.white-text-box {
+    border: 1px solid #d5d5d5;
+    background: #eaeaea;
+    font-size: 11px;
+    color: #646464;
+    line-height: 20px;
+    padding: 0 8px 0 10px;
+}
+input.white-text-box {
+    background: #ffffff;
+}
+span.change-number-arrow {
+    display: inline-block;
+    background: url("../img/my-gifticon/change-number-&gt.png") no-repeat;
+    height: 10px;
+    width: 8px;
+    margin: 0 1px 0 4px;
+}
+
+/*third-center-layer*/
+
+.third-center-layer {
+    width: 419px;
+    height: 498px;
+    top: 1350px;
+    left: 432px;
+}
+ul.square-marker li p.reference {
+    text-indent: 12px;
+    font-size: 8px;
+    color: #a9a9a9;
+}
+p.reference span.reference-orange {
+    color: #ff5f28;
+}
+.third-center-top-table {
+    margin-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dotted #d0d0d0;
+}
+.third-center-bottom-table {
+    margin-top: 16px;
+}
+.third-center-bottom-table table.my-gifticon-table tr:first-child th:first-child {
+    vertical-align: middle;
+    text-align: center;
+    padding-left: 0;
+}
+.third-center-bottom-table table.my-gifticon-table tr:first-child th {
+    padding-left: 21px;
 }

@@ -8,15 +8,14 @@
 
 /*top-left*/
 
-.main-top-left, .main-top-right, .main-bottom-right, .main-bottom-left, .main-center, .first-layer, .second-left-layer, .third-left-layer, .third-center-layer {
-    width: 767px;
-    height: 625px;
+.main-top-left, .main-top-right, .main-bottom-right, .main-bottom-left, .main-center, .first-layer, .second-left-layer, .third-left-layer, .third-center-layer, .third-right-layer, .windows-left-first {
+    width: 770px;
     background: #c6c6c6;
     padding: 3px;
     display: inline-block;
     position: absolute;
 }
-.main-top-left {
+.main-top-left, .first-layer {
     top: 0;
     left: 0;
 }
@@ -33,7 +32,7 @@ h2.popup-h2 span.black-text {
     padding-left: 10px;
     color: #000000;
 }
-.top-left-content, .top-right-content, .bottom-left-content, .center-content, .first-layer-content, .second-left-content, .third-left-content, .third-center-content {
+.top-left-content, .top-right-content, .bottom-left-content, .center-content, .first-layer-content, .second-left-content, .third-left-content, .third-center-content, .windows-left-first-content {
     background: #ffffff;
     margin-top: 1px;
     padding: 20px 19px 20px 20px;
@@ -122,8 +121,6 @@ span.orange-button-right {
 /*main-top-right*/
 
 .main-top-right {
-    width: 766px;
-    height: 239px;
     left: 891px;
 }
 .top-right-content {
@@ -138,7 +135,6 @@ table.my-gifticon-table thead tr th {
 
 .main-bottom-right {
     width: 700px;
-    height: 348px;
     top: 318px;
     left: 891px;
 }
@@ -273,8 +269,7 @@ span.cancle-button-right {
 /*main-bottom-left*/
 
 .main-bottom-left {
-    width: 419px;
-    height: 393px;
+    width: 420px;
     top: 704px;
 }
 .bottom-left-content, .third-center-content {
@@ -320,7 +315,6 @@ td input.memo {
 
 .main-center {
     width: 400px;
-    height: 181px;
     top: 704px;
     left: 449px;
 }
@@ -343,9 +337,6 @@ td input.memo {
 
 .first-layer {
     width: 700px;
-    height: 550px;
-    top: 0;
-    left: 0;
 }
 .first-layer-content {
     padding: 20px 24px 20px 20px;
@@ -385,6 +376,23 @@ ol.bold-main-list li ul.square-marker li dl.choice-example dd:last-child {
 ol.bold-main-list li:not(:first-child) {
     margin-top: 15px;
 }
+button.popup-close {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 19px;
+    right: 20px;
+    width: 13px;
+    height: 13px;
+    display: block;
+}
+span.popup-close-x {
+    background: url("../img/my-gifticon/popup-x.png") no-repeat;
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+}
+
 /*second-left-layer*/
 
 .second-left-layer {
@@ -438,8 +446,7 @@ ol.bold-main-list li:last-child dl.square-marker-dl dd {
 /*third-left-layer*/
 
 .third-left-layer {
-    width: 404px;
-    height: 305px;
+    width: 420px;
     top: 1350px;
     left: 0;
 }
@@ -478,10 +485,9 @@ span.change-number-arrow {
 /*third-center-layer*/
 
 .third-center-layer {
-    width: 419px;
-    height: 498px;
+    width: 420px;
     top: 1350px;
-    left: 432px;
+    left: 440px;
 }
 ul.square-marker li p.reference {
     text-indent: 12px;
@@ -506,4 +512,26 @@ p.reference span.reference-orange {
 }
 .third-center-bottom-table table.my-gifticon-table tr:first-child th {
     padding-left: 21px;
+}
+
+/*third-right-layer*/
+
+.third-right-layer {
+    width: 500px;
+    top: 1350px;
+    left: 890px;
+}
+.third-right-content-list {
+    padding: 20px 15px 20px 20px;
+}
+.third-right-content-list ol.bold-main-list li:nth-child(2) ul.square-marker li {
+    letter-spacing: -1.7px;
+}
+
+/*windows-left-first*/
+
+.windows-left-first {
+    width: 600px;
+    top: 0;
+    left: 0;
 }

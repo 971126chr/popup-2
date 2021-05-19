@@ -8,7 +8,7 @@
 
 /*top-left*/
 
-.main-top-left, .main-top-right, .main-bottom-right, .main-bottom-left, .main-center, .first-layer, .second-left-layer, .third-left-layer, .third-center-layer, .third-right-layer, .windows-left-first, .windows-left-second, .windows-left-third, .windows-center-first, .windows-center-second {
+.main-top-left, .main-top-right, .main-bottom-right, .main-bottom-left, .main-center, .first-layer, .second-left-layer, .third-left-layer, .third-center-layer, .third-right-layer, .windows-left-first, .windows-left-second, .windows-left-third, .windows-center-first, .windows-center-second, .windows-center-third, .windows-right-first, .windows-right-second, .windows-right-third, .windows-right-fourth {
     width: 770px;
     background: #c6c6c6;
     padding: 3px;
@@ -32,7 +32,7 @@ h2.popup-h2 span.black-text {
     padding-left: 10px;
     color: #000000;
 }
-.top-left-content, .top-right-content, .bottom-left-content, .center-content, .first-layer-content, .second-left-content, .third-left-content, .third-center-content, .windows-left-first-content, .windows-left-second-content, .windows-center-second-content {
+.top-left-content, .top-right-content, .bottom-left-content, .center-content, .first-layer-content, .second-left-content, .third-left-content, .third-center-content, .windows-left-first-content, .windows-left-second-content, .windows-center-second-content, .windows-center-third-content, .windows-right-first-content, .windows-right-second-content, .windows-right-third-content, .windows-right-fourth-content {
     background: #ffffff;
     margin-top: 1px;
     padding: 20px 19px 20px 20px;
@@ -86,7 +86,7 @@ ul.top-left-list {
     background: url("../img/my-gifticon/list-marker.png") no-repeat left center;
     padding-left: 7px;
 }
-.top-left-small-table {
+.top-left-small-table, div.red-table, div.table-margin {
     margin-top: 10px;
 }
 .button-content {
@@ -461,7 +461,7 @@ ol.bold-main-list li:last-child dl.square-marker-dl dd {
     border-bottom: 1px dotted #d0d0d0;
 }
 .change-number {
-    margin-top: 13px;
+    margin-top: 10px;
 }
 input.gray-text-box, input.white-text-box {
     border: 1px solid #d5d5d5;
@@ -545,9 +545,6 @@ p.reference span.reference-orange {
     margin-left: 0;
     font-size: 14.7px;
     font-weight: bold;
-}
-div.red-table {
-    margin-top: 10px;
 }
 table.red-table-th {
     border-top: 1px solid #d8b19b;
@@ -645,6 +642,9 @@ input.table-bottom-text-box {
 .phone-bg ul.square-marker:nth-child(3) li {
     position: relative;
 }
+.phone-bg ul.square-marker:nth-child(3) li input, .windows-center-third-content table.no-border td input {
+    padding-left: 5px;
+}
 .phone-bg ul.square-marker:nth-child(3) li span.limited-byte {
     position: absolute;
     top: 58px;
@@ -660,9 +660,116 @@ input.table-bottom-text-box {
     top: 500px;
     left: 630px;
 }
-.windows-center-second-content table {
+table.no-border {
     width: 100%;
     font-size: 12px;
     color: #969696;
     white-space: nowrap;
+}
+table.no-border tr {
+    line-height: 30px;
+}
+table.no-border tr:nth-child(n+3) {
+    line-height: 20px;
+}
+table.no-border th {
+    font-weight: lighter;
+    vertical-align: middle;
+}
+table.no-border td {
+    color: #646464;
+    position: relative;
+}
+table.no-border tr:nth-child(n+3) td {
+    background: url("../img/my-gifticon/table-marker.png") no-repeat left;
+    padding-left: 9px;
+}
+
+/*windows-center-third*/
+
+.windows-center-third {
+    width: 600px;
+    top: 820px;
+    left: 630px;
+}
+input.table-text-box {
+    border: 1px solid #d8d8d8;
+    line-height: 21px;
+    width: 100%;
+    font-size: 12px;
+}
+.windows-center-third-content table.no-border td span.limited-byte {
+    position: absolute;
+    top: 0;
+    right: 7px;
+}
+
+/*windows-right-first*/
+
+.windows-right-first {
+    width: 460px;
+    top: 0;
+    left: 1270px;
+}
+.windows-right-first-content input.find-file-text {
+    padding-left: 5px;
+    min-width: 312px;
+}
+.windows-right-first-content div.filebox label, .windows-right-second-content div.filebox label {
+    font-size: 11px;
+    color: #646464;
+}
+.windows-right-first-content ul.square-marker {
+    margin-top: 15px;
+}
+
+/*windows-right-second*/
+
+.windows-right-second {
+    width: 400px;
+    top: 300px;
+    left: 1270px;
+}
+.windows-right-second-content select.others {
+    min-width: 90px;
+    padding: 0;
+}
+.windows-right-second-content input.find-file-text {
+    min-width: 205px;
+    padding: 0 0 0 5px;
+}
+.windows-right-second-content table.my-gifticon-table th:first-child {
+    padding: 0;
+}
+
+/*windows-right-third*/
+
+.windows-right-third {
+    width: 400px;
+    top: 600px;
+    left: 1270px;
+}
+.windows-right-third-content {
+    position: relative;
+}
+.windows-right-third-content span.limited-byte {
+    font-size: 12px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+}
+
+/*windows-right-fourth*/
+
+.windows-right-fourth {
+    width: 400px;
+    top: 800px;
+    left: 1270px;
+}
+.windows-right-fourth-content ul.square-marker {
+    padding-bottom: 10px;
+    border-bottom: 1px dotted #d0d0d0;
+}
+.windows-right-fourth-content div.change-number div:not(:first-child) {
+    margin-top: 7px;
 }

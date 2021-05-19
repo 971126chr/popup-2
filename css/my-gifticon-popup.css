@@ -8,7 +8,7 @@
 
 /*top-left*/
 
-.main-top-left, .main-top-right, .main-bottom-right, .main-bottom-left, .main-center, .first-layer, .second-left-layer, .third-left-layer, .third-center-layer, .third-right-layer, .windows-left-first {
+.main-top-left, .main-top-right, .main-bottom-right, .main-bottom-left, .main-center, .first-layer, .second-left-layer, .third-left-layer, .third-center-layer, .third-right-layer, .windows-left-first, .windows-left-second, .windows-left-third, .windows-center-first, .windows-center-second {
     width: 770px;
     background: #c6c6c6;
     padding: 3px;
@@ -32,7 +32,7 @@ h2.popup-h2 span.black-text {
     padding-left: 10px;
     color: #000000;
 }
-.top-left-content, .top-right-content, .bottom-left-content, .center-content, .first-layer-content, .second-left-content, .third-left-content, .third-center-content, .windows-left-first-content {
+.top-left-content, .top-right-content, .bottom-left-content, .center-content, .first-layer-content, .second-left-content, .third-left-content, .third-center-content, .windows-left-first-content, .windows-left-second-content, .windows-center-second-content {
     background: #ffffff;
     margin-top: 1px;
     padding: 20px 19px 20px 20px;
@@ -534,4 +534,135 @@ p.reference span.reference-orange {
     width: 600px;
     top: 0;
     left: 0;
+}
+.phone-bg {
+    background: url("../img/my-gifticon/girl-phone.png") no-repeat left;
+    width: 100%;
+    min-height: 349px;
+    padding-left: 216px;
+}
+.phone-bg ul.square-marker {
+    margin-left: 0;
+    font-size: 14.7px;
+    font-weight: bold;
+}
+div.red-table {
+    margin-top: 10px;
+}
+table.red-table-th {
+    border-top: 1px solid #d8b19b;
+    width: 100%;
+    font-size: 12px;
+    color: #969696;
+    line-height: 32px;
+    background: #f4e9e3;
+}
+table.red-table-th thead tr th div.th-line {
+    background: url("../img/my-gifticon/red-table-th-line.png") no-repeat right center;
+}
+table.red-table-td {
+    width: 100%;
+}
+table.red-table-td tbody tr td {
+    line-height: 42px;
+    padding-left: 25px;
+    color: #646464;
+    font-size: 12px;
+}
+table.red-table-td tbody tr td:last-child {
+    padding-left: 21px;
+}
+table.red-table-td tbody tr:last-child {
+    border-bottom: 2px solid #ead6ca;
+}
+table.red-table-td tbody tr:nth-child(even) {
+    background: #fcf9f8;
+}
+table.red-table-td tbody tr {
+    border-top: 1px solid #ead6ca;
+}
+div.red-table-td-scroll {
+    max-height: 131px;
+    overflow-y: scroll;
+}
+
+/*windows-left-second*/
+
+.windows-left-second {
+    top: 500px;
+    left: 0;
+    width: 245px;
+}
+.dunkin-phone {
+    background: url("../img/my-gifticon/dunkin-phone.png") no-repeat;
+    width: 196px;
+    min-height: 349px;
+}
+
+/*windows-left-third*/
+
+.windows-left-third {
+    top: 500px;
+    left: 280px;
+    width: 245px;
+}
+.girl-phone {
+    background: url("../img/my-gifticon/girl-phone.png") no-repeat;
+    width: 196px;
+    min-height: 349px;
+    position: relative;
+}input.phone-textbox {
+    width: 166px;
+    line-height: 27px;
+    font-size: 12px;
+    color: #646464;
+    padding-left: 5px;
+    border: 1px solid #e5e5e5;
+    background: #f8f8f8;
+    position: absolute;
+    bottom: 63px;
+    left: 13px;
+}
+
+/*windows-center-first*/
+
+.windows-center-first {
+    width: 600px;
+    top: 0;
+    left: 630px;
+}
+input.table-bottom-text-box {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    min-height: 52px;
+    border: 1px solid #e5e5e5;
+    background: #f8f8f8;
+}
+.phone-bg ul.square-marker:nth-child(3) {
+    margin-top: 20px;
+}
+.phone-bg ul.square-marker:nth-child(3) li {
+    position: relative;
+}
+.phone-bg ul.square-marker:nth-child(3) li span.limited-byte {
+    position: absolute;
+    top: 58px;
+    right: 6px;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+/*windows-center-second*/
+
+.windows-center-second {
+    width: 600px;
+    top: 500px;
+    left: 630px;
+}
+.windows-center-second-content table {
+    width: 100%;
+    font-size: 12px;
+    color: #969696;
+    white-space: nowrap;
 }

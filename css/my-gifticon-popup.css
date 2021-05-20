@@ -773,3 +773,103 @@ input.table-text-box {
 .windows-right-fourth-content div.change-number div:not(:first-child) {
     margin-top: 7px;
 }
+
+/*website*/
+
+.contents {
+    margin: 0 auto;
+    width: 960px;
+}
+.top-nav-bar {
+    border-top: 3px solid #e5e5e5;
+    border-bottom: 5px solid #ff4e00;
+    height: 90px;
+}
+.top-nav-bar-width {
+    width: 960px;
+    margin: 0 auto;
+    padding: 0 1px;
+    position: relative;
+}
+h1.gifticon {
+    display: inline-block;
+    font-size: 16px;
+    letter-spacing: -2px;
+    line-height: 83px;
+}
+h1.gifticon a {
+    background: url("../img/my-gifticon/website/top-nav/gifticon.png") no-repeat left;
+    padding: 7px 0 0 93px;
+}
+ul.top-nav-list {
+    display: inline-block;
+    margin-left: 45px;
+    font-size: 14px;
+    font-weight: bold;
+}
+ul.top-nav-list li {
+    float: left;
+}
+ul.top-nav-list li:not(:last-child) {
+    background: url("../img/my-gifticon/website/top-nav/nav-line.png") no-repeat right center;
+}
+ul.top-nav-list li:not(:last-child) a {
+    padding-right: 20px;
+}
+ul.top-nav-list li:not(:first-child) a {
+    padding-left: 15px;
+}
+ul.top-nav-list::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.search-box {
+    margin-left: 79px;
+    display: inline-block;
+}
+.search-box input {
+    width: 180px;
+    height: 26px;
+    background: url("../img/my-gifticon/website/top-nav/search-arrow.png") no-repeat right;
+    padding: 0 13px 0 5px;
+    border: 2px solid #f1143c;
+}
+.search-box button.search-button {
+    border: 2px solid #f1143c;
+    border-left: none;
+    margin-left: -5px;
+    background: url("../img/my-gifticon/website/top-nav/search-button.png") no-repeat;
+    width: 42px;
+    height: 26px;
+    line-height: 2.5;
+    font-size: 10px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.quick-nav {
+    position: absolute;
+    top: 9px;
+    right: 1px;
+}
+.quick-nav ul.quick-nav-list li {
+    float: left;
+    font-size: 6px;
+}
+.quick-nav ul.quick-nav-list li a:hover {
+    color: #333333;
+}
+.quick-nav ul.quick-nav-list li:not(:first-child) a {
+    padding-left: 5px;
+    color: #a8a8a8;
+}
+.quick-nav ul.quick-nav-list li:not(:last-child) a {
+    padding-right: 7px;
+    border-right: 1px dotted #a8a8a8;
+    color: #a8a8a8;
+}
+.quick-nav ul.quick-nav-list::after {
+    content: "";
+    display: block;
+    clear: both;
+}

@@ -68,7 +68,7 @@ table.my-gifticon-table tbody tr td {
     line-height: 32px;
     letter-spacing: -1px;
 }
-table.my-gifticon-table tr td.bold-text {
+table.my-gifticon-table tr td.bold-text, table.my-gifticon-table tr th.bold-text {
     font-weight: bold;
 }
 table.my-gifticon-table tr td.orange-text {
@@ -248,16 +248,16 @@ span.orange-arrow-right {
 button.cancel-button {
     color: #727272;
 }
-span.cancle-button-center {
+span.cancel-button-center {
     display: inline-block;
     background: url("../img/my-gifticon/cancel-button.png") repeat-x;
 }
-span.cancle-button-left {
+span.cancel-button-left {
     display: inline-block;
     background: url("../img/my-gifticon/cancel-button-left.png") no-repeat;
     padding-left: 17px;
 }
-span.cancle-button-right {
+span.cancel-button-right {
     display: inline-block;
     background: url("../img/my-gifticon/cancel-button-right.png") no-repeat right;
     padding-right: 19px;
@@ -546,42 +546,6 @@ p.reference span.reference-orange {
     font-size: 14.7px;
     font-weight: bold;
 }
-table.red-table-th {
-    border-top: 1px solid #d8b19b;
-    width: 100%;
-    font-size: 12px;
-    color: #969696;
-    line-height: 32px;
-    background: #f4e9e3;
-}
-table.red-table-th thead tr th div.th-line {
-    background: url("../img/my-gifticon/red-table-th-line.png") no-repeat right center;
-}
-table.red-table-td {
-    width: 100%;
-}
-table.red-table-td tbody tr td {
-    line-height: 42px;
-    padding-left: 25px;
-    color: #646464;
-    font-size: 12px;
-}
-table.red-table-td tbody tr td:last-child {
-    padding-left: 21px;
-}
-table.red-table-td tbody tr:last-child {
-    border-bottom: 2px solid #ead6ca;
-}
-table.red-table-td tbody tr:nth-child(even) {
-    background: #fcf9f8;
-}
-table.red-table-td tbody tr {
-    border-top: 1px solid #ead6ca;
-}
-div.red-table-td-scroll {
-    max-height: 131px;
-    overflow-y: scroll;
-}
 
 /*windows-left-second*/
 
@@ -697,6 +661,7 @@ input.table-text-box {
     line-height: 21px;
     width: 100%;
     font-size: 12px;
+    padding-left: 5px;
 }
 .windows-center-third-content table.no-border td span.limited-byte {
     position: absolute;
@@ -776,10 +741,6 @@ input.table-text-box {
 
 /*website*/
 
-.contents {
-    margin: 0 auto;
-    width: 960px;
-}
 .top-nav-bar {
     border-top: 3px solid #e5e5e5;
     border-bottom: 5px solid #ff4e00;
@@ -856,9 +817,6 @@ ul.top-nav-list::after {
     float: left;
     font-size: 6px;
 }
-.quick-nav ul.quick-nav-list li a:hover {
-    color: #333333;
-}
 .quick-nav ul.quick-nav-list li:not(:first-child) a {
     padding-left: 5px;
     color: #a8a8a8;
@@ -868,8 +826,350 @@ ul.top-nav-list::after {
     border-right: 1px dotted #a8a8a8;
     color: #a8a8a8;
 }
+.quick-nav ul.quick-nav-list li a:hover, .quick-nav ul.quick-nav-list li a.active {
+    color: #333333;
+    font-weight: bold;
+}
 .quick-nav ul.quick-nav-list::after {
     content: "";
     display: block;
     clear: both;
+}
+.contents {
+    margin: 0 auto;
+    width: 960px;
+    padding-top: 11px;
+}
+.header .this-page {
+    text-align: right;
+    padding-right: 5px;
+    font-size: 11px;
+}
+.header .this-page a.house-img {
+    color: #989898;
+    padding: 0 6px 0 18px;
+    background: url("../img/my-gifticon/website/top-nav/house-img.png") no-repeat left;
+}
+.header .this-page span.write-buy {
+    color: #737373;
+    padding-left: 10px;
+    background: url("../img/my-gifticon/website/top-nav/gray-&gt.png") no-repeat left;
+}
+.header h2.shopping-basket {
+    font-size: 37.7px;
+    color: #f5370f;
+    padding: 0 0 11px 70px;
+    background: url("../img/my-gifticon/website/header/shopping-basket.png") no-repeat left top;
+    line-height: 52px;
+    margin-top: 30px;
+    border-bottom: 1px solid #dcdcdc;
+}
+.header .step {
+    line-height: 92px;
+    border-bottom: 1px solid #dcdcdc;
+    padding: 0 19px 0 10px;
+}
+.header .step ul.step-list li {
+    float: left;
+    font-size: 17px;
+    color: #bbbbbb;
+    letter-spacing: -1px;
+}
+.header .step ul.step-list li a {
+    color: #bbbbbb;
+    padding: 35px 0;
+}
+.header .step ul.step-list li span.org-text {
+    font-size: 15px;
+    color: #fcb9ab;
+}
+.header .step ul.step-list li:not(:first-child) {
+    padding-left: 9px;
+}
+.header .step ul.step-list li:not(:last-child) {
+    padding-right: 24px;
+    background: url("../img/my-gifticon/website/header/step-list-arrow.png") no-repeat right;
+}
+/*.header .step ul.step-list li:hover span.org-text,*/ .header .step ul.step-list li.active span.org-text {
+    color: #f5370f;
+    vertical-align: bottom;
+}
+/*.header .step ul.step-list li:hover, .header .step ul.step-list li:hover a,*/ .header .step ul.step-list li.active {
+    font-size: 27px;
+    color: #1e1e1e;
+    font-weight: bold;
+}
+.header .step ul.step-list::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.main {
+    margin-top: 49px;
+    padding-bottom: 407px;
+}
+.main table.my-gifticon-table tr th:first-child {
+    text-align: left;
+    padding-left: 44px;
+}
+.main table.my-gifticon-table thead tr th:last-child {
+    text-align: left;
+    padding-left: 14px;
+}
+.main table.my-gifticon-table tbody tr td {
+    position: relative;
+    padding: 0 1px 0 8px;
+}
+.main table.my-gifticon-table tbody tr td span.limited-byte {
+    position: absolute;
+    top: 0;
+    right: 6px;
+}
+.main table.my-gifticon-table tbody tr:nth-child(2) td input {
+    width: 163px;
+}
+.main table.my-gifticon-table tbody tr td button.cancel-b {
+    line-height: 25px;
+    margin-left: 2px;
+}
+.main table.my-gifticon-table tbody tr:nth-child(3) th:first-child,
+.main table.my-gifticon-table tbody tr:nth-child(5) th:first-child {
+    vertical-align: middle;
+}
+.main table.my-gifticon-table tbody tr:nth-child(3) td div,
+.main table.my-gifticon-table tbody tr:nth-child(4) td div,
+.main table.my-gifticon-table tbody tr:nth-child(6) td div,
+.main table.my-gifticon-table tbody tr:nth-child(8) td > div,
+.main table.my-gifticon-table tbody tr:nth-child(9) td div,
+.main table.my-gifticon-table tbody tr:nth-child(10) td div {
+    display: inline-block;
+}
+.main table.my-gifticon-table tbody tr:nth-child(3) td div:nth-child(2) {
+    padding-left: 50px;
+}
+.main table.my-gifticon-table tbody tr:nth-child(3) td {
+    line-height: 21px;
+}
+.main table.my-gifticon-table tbody tr:nth-child(4) th,
+.main table.my-gifticon-table tbody tr:nth-child(5) th {
+    padding-left: 35px;
+}
+.main table.my-gifticon-table tbody tr:nth-child(4) td div:nth-child(2) {
+    padding-left: 37px;
+}
+.main table.my-gifticon-table tbody tr:nth-child(5) td {
+    padding: 0 1px 5px 14px;
+    line-height: 27px;
+}
+td div.p-padding {
+    padding-left: 3px;
+}
+td div.p-padding button.cancel-button {
+    position: absolute;
+    top: 30px;
+    right: 2px;
+}
+td p.text-bold {
+    font-weight: bold;
+    padding-left: 9px;
+    background: url("../img/my-gifticon/website/main/table-text-arrow.png") no-repeat left center;
+}
+.main table.my-gifticon-table tbody tr td button.excel-download {
+    position: relative;
+    
+}
+.main table.my-gifticon-table tbody tr td button.excel-download span.big-excel-center {
+    color: #ff5f28;
+    line-height: 22px;
+}
+span.big-excel-center {
+    display: inline-block;
+    background: url("../img/my-gifticon/website/main/big-excel.png") repeat-x;
+}
+span.big-excel-left {
+    display: inline-block;
+    background: url("../img/my-gifticon/website/main/big-excel-left.png") no-repeat;
+    padding-left: 35px;
+}
+span.big-excel-right {
+    display: inline-block;
+    background: url("../img/my-gifticon/website/main/big-excel-right.png") no-repeat right;
+    padding-right: 18px;
+}
+td ul.width-line-list {
+    list-style: url("../img/my-gifticon/website/main/width-line-marker.png") inside;
+    line-height: normal;
+    margin-top: 4px;
+}
+.main table.my-gifticon-table tbody tr:nth-child(6) td {
+    padding-left: 15px;
+}
+.main table.my-gifticon-table tbody tr:nth-child(6) td div:last-child {
+    margin-left: 55px;
+}
+.main table.my-gifticon-table tbody tr:nth-child(8) th {
+    vertical-align: middle;
+}
+.main table.my-gifticon-table tbody tr:nth-child(8) td {
+    padding-top: 12px;
+}
+img.gifticon-img {
+    display: block;
+}
+.main table.my-gifticon-table tbody tr:nth-child(8) td div.gifticon-ex span.cancel-button-center {
+    margin-top: 5px;
+}
+div.gifticon-ex {
+    text-align: center;
+}
+div.main-red-table {
+    margin-left: 19px;
+    padding-top: 1px;
+    min-width: 496px;
+    position: relative;
+}
+div.main-red-table .red-table {
+    line-height: 0px;
+}
+p.gray-text {
+    font-size: 11px;
+    color: #a9a9a9;
+    line-height: 15px;
+}
+table.red-table-th,
+div.main-red-table > div.red-table > table.red-table-th {
+    border-top: 1px solid #d8b19b;
+    width: 100%;
+    font-size: 12px;
+    color: #969696;
+    line-height: 32px;
+    background: #f4e9e3;
+}
+table.red-table-th thead tr th div.th-line,
+div.main-red-table > div.red-table > table.red-table-th thead tr th div.th-line {
+    background: url("../img/my-gifticon/red-table-th-line.png") no-repeat right center;
+}
+table.red-table-td {
+    width: 100%;
+}
+table.red-table-td tbody tr td {
+    line-height: 42px;
+    padding-left: 25px;
+    color: #646464;
+    font-size: 12px;
+}
+table.red-table-td tbody tr td:last-child {
+    padding-left: 21px;
+}
+table.red-table-td tbody tr:last-child {
+    border-bottom: 2px solid #ead6ca;
+}
+table.red-table-td tbody tr:nth-child(even) {
+    background: #fcf9f8;
+}
+table.red-table-td tbody tr {
+    border-top: 1px solid #ead6ca;
+}
+div.red-table-td-scroll {
+    max-height: 131px;
+    overflow-y: scroll;
+}
+.main table.my-gifticon-table > tbody > tr:nth-child(8) > td {
+    padding-bottom: 20px;
+}
+.main table.my-gifticon-table tbody tr:nth-child(8) td div.main-red-table > div:last-child {
+    margin-top: 5px;
+    text-align: right;
+}
+.main table.my-gifticon-table tbody tr:nth-child(9) td div:last-child {
+    padding-left: 95px;
+}
+.main table.my-gifticon-table tbody tr:nth-child(10) td div:last-child {
+    padding-left: 40px;
+}
+span.orange-button-arrow {
+    display: inline-block;
+    background: url("../img/my-gifticon/website/main/orange-button-arrow.png") no-repeat right;
+    padding-right: 10px;
+}
+.main div.button-content {
+    margin-top: 37px;
+    line-height: 0;
+}
+.footer {
+    background: url("../img/my-gifticon/website/footer/footer-bg.png") repeat-x top;
+    width: 100%;
+    min-height: 134px;
+}
+.footer-line {
+    line-height: 73px;
+    border-bottom: 1px solid #ff7819;
+}
+.footer-width {
+    width: 960px;
+    margin: 0 auto;
+    padding-left: 2px;
+}
+h3.gray-gifticon {
+    background: url("../img/my-gifticon/website/footer/gray-gifticon.png") no-repeat left center;
+    display: inline-block;
+    width: 75px;
+    height: 25px;
+}
+.footer-main {
+    display: inline-block;
+    margin-left: 11px;
+    vertical-align: middle;
+}
+ul.footer-list {
+    line-height: 1;
+    font-size: 10px;
+    font-weight: bold;
+    color: #333333;
+}
+ul.footer-list li {
+    float: left;
+}
+ul.footer-list li:not(:first-child) a {
+    padding-left: 20px;
+}
+ul.footer-list li:not(:last-child) a {
+    padding-right: 27px;
+    background: url("../img/my-gifticon/website/footer/footer-list-line.png") no-repeat right center;
+}
+ul.footer-list::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+dl.footer-dl {
+    font-size: 8px;
+    color: #8d8d8d;
+    line-height: 1;
+    margin-top: 10px;
+}
+dl.footer-dl dt, dl.footer-dl dd {
+    float: left;
+}
+dl.footer-dl dt, dl.footer-dl dd:not(:last-child) {
+    padding-right: 5px;
+}
+dl.footer-dl::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.copyright-p {
+    line-height: 60px;
+    text-align: center;
+    font-size: 8px;
+    color: #64615f;
+}
+span.red-sk {
+    color: #ff362e;
+    font-weight: bold;
+}
+span.copyright-yellow {
+    color: #ff7e0c;
+    font-weight: bold;
 }

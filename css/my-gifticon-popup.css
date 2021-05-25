@@ -8,16 +8,32 @@
 
 /*top-left*/
 
-.main-top-left, .main-top-right, .main-bottom-right, .main-bottom-left, .main-center, .first-layer, .second-left-layer, .third-left-layer, .third-center-layer, .third-right-layer, .windows-left-first, .windows-left-second, .windows-left-third, .windows-center-first, .windows-center-second, .windows-center-third, .windows-right-first, .windows-right-second, .windows-right-third, .windows-right-fourth {
-    width: 770px;
+.layer {
     background: #c6c6c6;
     padding: 3px;
     display: inline-block;
     position: absolute;
-}
-.main-top-left, .first-layer {
     top: 0;
     left: 0;
+}
+.bigger {
+    width: 770px;
+}
+.big {
+    width: 700px;
+}
+.middle {
+    width: 600px;
+}
+.small {
+    width: 420px;
+    top: 705px;
+}
+.smaller {
+    width: 245px;
+}
+.little-top {
+    top: 500px;
 }
 h2.popup-h2 {
     background: #ffffff;
@@ -32,7 +48,7 @@ h2.popup-h2 span.black-text {
     padding-left: 10px;
     color: #000000;
 }
-.top-left-content, .top-right-content, .bottom-left-content, .center-content, .first-layer-content, .second-left-content, .third-left-content, .third-center-content, .windows-left-first-content, .windows-left-second-content, .windows-center-second-content, .windows-center-third-content, .windows-right-first-content, .windows-right-second-content, .windows-right-third-content, .windows-right-fourth-content {
+.content {
     background: #ffffff;
     margin-top: 1px;
     padding: 20px 19px 20px 20px;
@@ -97,13 +113,10 @@ ul.top-left-list {
 }
 button.top-left-button, button.cancel-button {
     border: none;
-    background: none;
     color: #ffffff;
     font-size: 12.5px;
     line-height: 25px;
     letter-spacing: -2px;
-}
-span.orange-button-center {
     display: inline-block;
     background: url("../img/my-gifticon/orange-button-center.png") repeat-x;
 }
@@ -120,11 +133,8 @@ span.orange-button-right {
 
 /*main-top-right*/
 
-.main-top-right {
-    left: 891px;
-}
-.top-right-content {
-    padding: 20px;
+.right {
+    left: 890px;
 }
 table.my-gifticon-table thead tr th {
     text-align: center;
@@ -133,10 +143,8 @@ table.my-gifticon-table thead tr th {
 
 /*main-bottom-right*/
 
-.main-bottom-right {
-    width: 700px;
-    top: 318px;
-    left: 891px;
+.center {
+    top: 320px;
 }
 .top-right-list {
     padding-left: 2px;
@@ -157,7 +165,6 @@ ul li p.list-marker {
 }
 button.excel-download {
     border: none;
-    background: none;
     margin-top: 4px;
     position: absolute;
     right: 0;
@@ -165,8 +172,6 @@ button.excel-download {
     font-size: 11px;
     color: #878787;
     letter-spacing: -1px;
-}
-span.excel-center {
     display: inline-block;
     background: url("../img/my-gifticon/excel-download.png") repeat-x;
 }
@@ -247,8 +252,6 @@ span.orange-arrow-right {
 }
 button.cancel-button {
     color: #727272;
-}
-span.cancel-button-center {
     display: inline-block;
     background: url("../img/my-gifticon/cancel-button.png") repeat-x;
 }
@@ -268,27 +271,23 @@ span.cancel-button-right {
 
 /*main-bottom-left*/
 
-.main-bottom-left {
-    width: 420px;
-    top: 704px;
-}
-.bottom-left-content, .third-center-content {
+.small-content {
     padding: 20px 25px 20px 20px;
 }
-.bottom-left-content table.my-gifticon-table tbody tr td {
+.small-content table.my-gifticon-table tbody tr td {
     padding-left: 10px;
 }
-.bottom-left-content table.my-gifticon-table input.personal-write {
+.small-content table.my-gifticon-table input.personal-write {
     border: 1px solid #d8d8d8;
     padding: 2.5px 6px; 
 }
-.bottom-left-content table.my-gifticon-table label.bottom-left-text-click {
+.small-content table.my-gifticon-table label.bottom-left-text-click {
     padding: 8.5px 68px 8.5px 0;
 }
-.bottom-left-content table.my-gifticon-table label.phone-number-text {
+.small-content table.my-gifticon-table label.phone-number-text {
     padding: 8.5px 32px 8.5px 0;
 }
-.bottom-left-content table.my-gifticon-table label.email-text {
+.small-content table.my-gifticon-table label.email-text {
     padding: 8.5px 57px 8.5px 0;
 }
 td select.date, td select.other-group {
@@ -299,7 +298,7 @@ td select.date, td select.other-group {
 td select.other-group {
     padding: 1px 61px 1px 6px;
 }
-.bottom-left-content table.my-gifticon-table tr:last-child td:last-child {
+.small-content table.my-gifticon-table tr:last-child td:last-child {
     padding: 5px 6px 9px 10px;
 }
 th label.memo-click{
@@ -313,11 +312,6 @@ td input.memo {
 
 /*main-center*/
 
-.main-center {
-    width: 400px;
-    top: 704px;
-    left: 449px;
-}
 .center-content {
     padding: 20px 62px 20px 20px;
 }
@@ -335,12 +329,6 @@ td input.memo {
 
 /*html 2 first-layer*/
 
-.first-layer {
-    width: 700px;
-}
-.first-layer-content {
-    padding: 20px 24px 20px 20px;
-}
 ol.bold-main-list, ul.square-marker {
     list-style: decimal inside;
     font-size: 12px;
@@ -395,14 +383,8 @@ span.popup-close-x {
 
 /*second-left-layer*/
 
-.second-left-layer {
-    width: 700px;
-    height: 745px;
+.bottom {
     top: 575px;
-    left: 0;
-}
-.second-left-content {
-    padding: 20px 90px 20px 20px;
 }
 span.indent {
     display: block;
@@ -436,19 +418,10 @@ ol.bold-main-list li:last-child dl.square-marker-dl dd {
     text-indent: 63px;
 }
 
-/*second-right-layer*/
-
-.wrap div.second-left-layer:nth-child(3) {
-    left: 720px;
-    top: 575px;
-}
-
 /*third-left-layer*/
 
-.third-left-layer {
-    width: 420px;
+.more-bottom {
     top: 1350px;
-    left: 0;
 }
 .third-left-content {
     padding: 20px 7px 24px 20px;
@@ -484,9 +457,7 @@ span.change-number-arrow {
 
 /*third-center-layer*/
 
-.third-center-layer {
-    width: 420px;
-    top: 1350px;
+.little-right {
     left: 440px;
 }
 ul.square-marker li p.reference {
@@ -516,11 +487,6 @@ p.reference span.reference-orange {
 
 /*third-right-layer*/
 
-.third-right-layer {
-    width: 500px;
-    top: 1350px;
-    left: 890px;
-}
 .third-right-content-list {
     padding: 20px 15px 20px 20px;
 }
@@ -530,11 +496,6 @@ p.reference span.reference-orange {
 
 /*windows-left-first*/
 
-.windows-left-first {
-    width: 600px;
-    top: 0;
-    left: 0;
-}
 .phone-bg {
     background: url("../img/my-gifticon/girl-phone.png") no-repeat left;
     width: 100%;
@@ -549,11 +510,6 @@ p.reference span.reference-orange {
 
 /*windows-left-second*/
 
-.windows-left-second {
-    top: 500px;
-    left: 0;
-    width: 245px;
-}
 .dunkin-phone {
     background: url("../img/my-gifticon/dunkin-phone.png") no-repeat;
     width: 196px;

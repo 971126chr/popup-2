@@ -27,13 +27,33 @@
 }
 .small {
     width: 420px;
-    top: 705px;
 }
 .smaller {
     width: 245px;
 }
+.little-right {
+    left: 440px;
+}
+.right {
+    left: 890px;
+}
+.more-right {
+    left: 1600px;
+}
 .little-top {
     top: 500px;
+}
+.more-little-right {
+    left: 280px;
+}
+.bottom {
+    top: 575px;
+}
+.little-bottom {
+    top: 820px;
+}
+.more-bottom {
+    top: 1350px;
 }
 h2.popup-h2 {
     background: #ffffff;
@@ -133,9 +153,6 @@ span.orange-button-right {
 
 /*main-top-right*/
 
-.right {
-    left: 890px;
-}
 table.my-gifticon-table thead tr th {
     text-align: center;
     padding-left: 0;
@@ -383,9 +400,6 @@ span.popup-close-x {
 
 /*second-left-layer*/
 
-.bottom {
-    top: 575px;
-}
 span.indent {
     display: block;
     text-indent: 12px;
@@ -420,9 +434,6 @@ ol.bold-main-list li:last-child dl.square-marker-dl dd {
 
 /*third-left-layer*/
 
-.more-bottom {
-    top: 1350px;
-}
 .third-left-content {
     padding: 20px 7px 24px 20px;
 }
@@ -457,9 +468,6 @@ span.change-number-arrow {
 
 /*third-center-layer*/
 
-.little-right {
-    left: 440px;
-}
 ul.square-marker li p.reference {
     text-indent: 12px;
     font-size: 8px;
@@ -543,11 +551,6 @@ p.reference span.reference-orange {
 
 /*windows-center-first*/
 
-.windows-center-first {
-    width: 600px;
-    top: 0;
-    left: 630px;
-}
 input.table-bottom-text-box {
     display: block;
     margin-top: 10px;
@@ -575,11 +578,6 @@ input.table-bottom-text-box {
 
 /*windows-center-second*/
 
-.windows-center-second {
-    width: 600px;
-    top: 500px;
-    left: 630px;
-}
 table.no-border {
     width: 100%;
     font-size: 12px;
@@ -607,11 +605,6 @@ table.no-border tr:nth-child(n+3) td {
 
 /*windows-center-third*/
 
-.windows-center-third {
-    width: 600px;
-    top: 820px;
-    left: 630px;
-}
 input.table-text-box {
     border: 1px solid #d8d8d8;
     line-height: 21px;
@@ -682,11 +675,6 @@ input.table-text-box {
 
 /*windows-right-fourth*/
 
-.windows-right-fourth {
-    width: 400px;
-    top: 800px;
-    left: 1270px;
-}
 .windows-right-fourth-content ul.square-marker {
     padding-bottom: 10px;
     border-bottom: 1px dotted #d0d0d0;
